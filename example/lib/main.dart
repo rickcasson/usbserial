@@ -136,7 +136,7 @@ class _MyAppState extends State<MyApp> {
             _ports.length > 0
                 ? "Available Serial Ports"
                 : "No serial devices available",
-            style: Theme.of(context).textTheme.title),
+            style: Theme.of(context).textTheme.headline6),
         ..._ports,
         Text('Status: $_status\n'),
         ListTile(
@@ -161,7 +161,7 @@ class _MyAppState extends State<MyApp> {
                   },
           ),
         ),
-        Text("Result Data", style: Theme.of(context).textTheme.title),
+        Text("Result Data", style: Theme.of(context).textTheme.headline6),
         ..._serialData,
       ])),
     ));
