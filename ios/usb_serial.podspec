@@ -8,14 +8,16 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 A USB Serial Flutter Plugin
                        DESC
-  s.homepage         = 'http://example.com'
+  s.homepage         = 'https://github.com/altera2015/usbserial'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Your Company' => 'email@example.com' }
+  s.author           = { 'Ron Bessems' => 'r.bessems@gmail.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
+  s.swift_version = '5.0'
+  s.platform = :ios, '9.0'
+  s.dependency "PeerTalk", '~> 0.1.0'
 
-  s.ios.deployment_target = '8.0'
 end
 
